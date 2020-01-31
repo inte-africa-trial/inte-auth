@@ -1,0 +1,4 @@
+[run]
+include = inte_auth/*
+omit = inte_auth/tests/*
+branch = 1
