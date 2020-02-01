@@ -50,7 +50,7 @@ clinic += [
     "inte_subject.change_riskfactors",
     "inte_subject.change_subjectrequisition",
     "inte_subject.change_subjectvisit",
-    "inte_subject.delete_anthropometryinitial",
+    "inte_subject.delete_anthropometry",
     "inte_subject.delete_diabetesinitialreview",
     "inte_subject.delete_generalassessment",
     "inte_subject.delete_generalassessmentinitial",
