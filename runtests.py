@@ -14,7 +14,6 @@ extras = dict(
     INDEX_PAGE="/",
 )
 
-
 app_name = 'inte_auth'
 base_dir = dirname(abspath(__file__))
 
@@ -38,8 +37,8 @@ DEFAULT_SETTINGS = DefaultTestSettings(
     EMAIL_ENABLED=True,
     HOLIDAY_FILE=join(base_dir, app_name, "tests", "holidays.csv"),
     LIVE_SYSTEM=False,
-    RANDOMIZATION_LIST_PATH=join(
-        base_dir, app_name, "tests", "test_randomization_list.csv"),
+    EDC_RANDOMIZATION_LIST_PATH=join(base_dir, app_name, "tests", "etc"),
+    EDC_RANDOMIZATION_REGISTER_DEFAULT_RANDOMIZER=False,
     INSTALLED_APPS=[
         "django.contrib.admin",
         "django.contrib.auth",
@@ -92,7 +91,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
     ],
     add_dashboard_middleware=True,
     add_lab_dashboard_middleware=True,
-    use_test_urls=True,
+    # use_test_urls=True,
     **extras,
 ).settings
 
